@@ -29,14 +29,12 @@ export default function Logo() {
 
 const styles = StyleSheet.create({
     containerLogo:{
-        // backgroundColor: "red",
-        // flex: 1,
-        height: '100%',
-        
+    //   backgroundColor: 'pink',
+      height: 40,
     },
+
     img:{
-        width:'60%',
         height: '100%',
-        // backgroundColor: 'black'
+        width: '50%'
     }
 })

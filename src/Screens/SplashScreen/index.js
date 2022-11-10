@@ -18,7 +18,7 @@ export default function SplashScreen() {
             style={styles.containerLottie}
             source={require("../../Assets/Images/splash.json")}
             autoPlay
-            speed={1.5}
+            speed={1}
             loop={false}
             onAnimationFinish={ () => navigation.navigate("StartScreen")}
             
@@ -35,9 +35,10 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center"
     },
+
     containerLottie:{
         // backgroundColor: "#000",
-        height: "50%",
+        height: "35%",
         justifyContent: "center",
         alignItems: "center"
         

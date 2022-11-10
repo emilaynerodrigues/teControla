@@ -23,9 +23,16 @@ export default function Home() {
           barStyle="light-content"
         />
         <View style={styles.container}>
-            <View style={styles.navArea}>
-
+            <View style={styles.greenArea}>
+                <View style={styles.navbar}>
+                  <TouchableOpacity style={styles.changeScreen}>
+                    <Text style={styles.text}>Todos</Text>
+                    <Ionicons name="chevron-down-outline" size={25} color="#fff" />
+                    
+                  </TouchableOpacity>
+                </View>
             </View>
+
             <View style={styles.flatlistDespesas}>
 
                 <View style={styles.btnPosition}>
@@ -34,6 +41,7 @@ export default function Home() {
                     </TouchableOpacity>
                   </View>
             </View>
+
             <View style={styles.infoArea}>
                 <View style={styles.faltaPagar}>
 
@@ -51,24 +59,40 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container:{
-    flex: 1
+    flex: 1,
   },
-  navArea:{
-    flex: 2
+
+  greenArea:{
+    flex: 2,
+    paddingHorizontal: 15
   },
+  
+  changeScreen:{
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+
+  text: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: "#fff",
+  },
+
   flatlistDespesas:{
     flex: 8,
     backgroundColor: "#fff",
     borderTopStartRadius: 20,
     borderTopEndRadius: 20
   },
+  
   btnPosition:{
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "flex-end",
-    marginRight: 15,
-    marginBottom: 15
+    marginRight: 10,
+    marginBottom: 10
   },
+  
   btnCreate:{
     height: 70,
     width: 70,
@@ -79,14 +103,15 @@ const styles = StyleSheet.create({
     elevation: 5
   },
 
-
   infoArea:{
     flex: 1.2
   },
+
   faltaPagar:{
     flex: 1,
     backgroundColor: "#E35D4D"
   },
+
   pago:{
     flex: 1
   },

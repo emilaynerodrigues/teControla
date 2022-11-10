@@ -30,7 +30,7 @@ export default function ForgetPass() {
           <Animatable.View
             animation="fadeInUp"
             delay={200}
-            style={styles.containerForgetPass}
+            style={styles.containerBody}
           >
             <Card style={styles.areaForgetPass}>
               <Text style={styles.textTitle}>Esqueci minha senha</Text>
@@ -70,26 +70,22 @@ export default function ForgetPass() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 30,
-    paddingVertical: 30,
-    //backgroundColor: "pink"
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    backgroundColor: "#fff",
   },
 
-  logo:{
-    height: 60,
-    // backgroundColor: 'green'
-  },
-
-  containerForgetPass: {
+  containerBody: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 15
     //backgroundColor: "pink"
   },
 
   areaForgetPass: {
     width: "100%",
-    height: "65%",
+    height: "60%",
     justifyContent: "space-evenly",
     paddingHorizontal: 20,
     paddingVertical: 30,
